@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="《The Signal's Just a Roar / 信号仅是个呼啸》中文翻译目录。">
+  <title>信号仅是个呼啸｜翻译目录</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #090b0c;
+      --panel: #101416;
+      --text: #d8e1dc;
+      --muted: #839089;
+      --signal: #9cf7bd;
+      --line: #26312b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px 20px;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.75 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    main {
+      width: min(680px, 100%);
+      padding: clamp(24px, 6vw, 52px);
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+
+    .frequency, .status { color: var(--signal); }
+    .frequency { margin: 0 0 10px; letter-spacing: .12em; }
+    h1 { margin: 0; font-size: clamp(2rem, 8vw, 4rem); line-height: 1.05; }
+    .english { margin: 10px 0 32px; color: var(--muted); }
+    p { margin: 18px 0; }
+
+    a { color: var(--signal); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    nav {
+      margin: 34px 0;
+      padding: 20px 0;
+      border-block: 1px solid var(--line);
+    }
+
+    ol { margin: 0; padding: 0; list-style: none; }
+    li { display: flex; justify-content: space-between; gap: 20px; padding: 7px 0; }
+    .pending { color: var(--muted); }
+    footer { color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="frequency">KGGF 690 AM // SIGNAL ACQUIRED</p>
+    <h1>信号仅是个呼啸</h1>
+    <p class="english">The Signal's Just a Roar</p>
+
+    <p>
+      这里存放的是
+      <a href="https://archiveofourown.org/works/16051769">winged_mammal 原作</a>
+      的中文同人翻译：卡车司机 Shaw 在无尽玉米地之间，意外调到 Root 的午夜电台。很怪，很浪漫，也特别、特别 nerd。
+    </p>
+    <p>
+      翻译已获得原作者授权。所有故事、角色与那些迷人的电波都属于它们各自的创作者；这个小站只是带着最高敬意，把收到的信号转译后再次发射。
+    </p>
+
+    <nav aria-label="章节目录">
+      <ol>
+        <li><a href="Chapter-1/">Chapter 1</a><span class="status">ON AIR</span></li>
+        <li class="pending"><span>Chapter 2</span><span>等待信号…</span></li>
+        <li class="pending"><span>更多章节</span><span>TO BE CONTINUED</span></li>
+      </ol>
+    </nav>
+
+    <footer>
+      <p>向 winged_mammal 致敬，也向每一个在凌晨两点认真讨论量子物理、阴谋论与玉米补贴的人致敬。</p>
+    </footer>
+  </main>
+</body>
+</html>
